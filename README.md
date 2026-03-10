@@ -1,7 +1,7 @@
 ## İçindekiler
 
-* [01_Chapter_beginning_quizzes](./01_Chapter_beginning_quizzes)
-* [02_Chapter_data_science_libraries](./02_Chapter_data_science_libraries)
+* [01_Chapter (Hatırlatıcı Quizler)](#01_chapter-hatırlatıcı-quizler)
+* [02_Chapter (Veri Bilimi Kütüphaneleri)](#02_chapter-veri-bilimi-kütüphaneleri)
 * [requirements.txt](./requirements.txt)
 
 ## Bölüm İçerikleri
