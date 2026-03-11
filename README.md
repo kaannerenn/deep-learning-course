@@ -2,6 +2,7 @@
 
 * [01_Chapter (Hatırlatıcı Quizler)](#01_chapter-hatırlatıcı-quizler)
 * [02_Chapter (Veri Bilimi Kütüphaneleri)](#02_chapter-veri-bilimi-kütüphaneleri)
+* [03_Chapter (Advance Python)](#03_chapter-advance-python)
 * [requirements.txt](./requirements.txt)
 
 ## Bölüm İçerikleri
@@ -25,3 +26,10 @@
 * [11_seaborn_intro.ipynb](./02_Chapter_data_science_libraries/11_seaborn_intro.ipynb): **Seaborn** ile istatistiksel veri görselleştirme. Veriyi farklı boyutlarda (multi-dimensional) analiz etmek için `hue`, `style`, `size` ve `col` gibi parametrelerin kullanımı çalışıldı. **Relational Plots** (`scatterplot`, `lineplot`) ve **Distribution Plots** (`displot`, `heatmap`) teknikleri uygulandı.
 * [12_seaborn_boxplot.ipynb](./02_Chapter_data_science_libraries/12_seaborn_boxplot.ipynb): Kategorik verilerin dağılım analizi. **Box Plot** (Kutu Grafiği) ile çeyreklikler (quartiles), medyan ve aykırı değerlerin (outliers) görsel yorumlanması üzerine çalışıldı.
 * [13_data_science_libraries_quiz_.ipynb](./02_Chapter_data_science_libraries/13_data_science_libraries_quiz.ipynb): 4 Kütüphane ile ilgili hatırlatıcı küçük örnekler yapıldı.
+
+### 03_Chapter (Advance Python)
+* [01_Advance_python.ipynb](./03_Chapter_advance_python/01_Advance_python.ipynb): Python'da ileri seviye programlama ve **Nesne Yönelimli Programlama (OOP)** mimarisi üzerine çalışıldı.
+    * **Metaprogramming:** Fonksiyon ve sınıfların davranışlarını değiştirmek için `decorator` ve `decorator combining` yapıları kullanıldı.
+    * **Encapsulation & Data Management:** `property` decorator'lar (`getter`, `setter`, `deleter`) ile veri yönetimi sağlandı.
+    * **Method Types:** Sınıf yapısını optimize etmek için `staticmethod`, `classmethod` ve `abstractmethod` (Soyutlama) farkları incelendi.
+    * **Polymorphism & Inheritance:** `Method Overloading` ve `Overriding` prensipleri ile kalıtım yönetimi; `final` ve `typing` (Tip Belirleme) ile kod güvenliği sağlandı.
