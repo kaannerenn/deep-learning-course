@@ -3,6 +3,7 @@
 * [01_Chapter (Hatırlatıcı Quizler)](#01_chapter-hatırlatıcı-quizler)
 * [02_Chapter (Veri Bilimi Kütüphaneleri)](#02_chapter-veri-bilimi-kütüphaneleri)
 * [03_Chapter (Advance Python)](#03_chapter-advance-python)
+* [04_Chapter (Pytorch)](#04_chapter-pytorch)
 * [requirements.txt](./requirements.txt)
 
 ## Bölüm İçerikleri
@@ -28,8 +29,19 @@
 * [13_data_science_libraries_quiz_.ipynb](./02_Chapter_data_science_libraries/13_data_science_libraries_quiz.ipynb): 4 Kütüphane ile ilgili hatırlatıcı küçük örnekler yapıldı.
 
 ### 03_Chapter (Advance Python)
-* [01_Advance_python.ipynb](./03_Chapter_advance_python/01_Advance_python.ipynb): Python'da ileri seviye programlama ve **Nesne Yönelimli Programlama (OOP)** mimarisi üzerine çalışıldı.
+* [01_advance_python.ipynb](./03_Chapter_advance_python/01_Advance_python.ipynb): Python'da ileri seviye programlama ve **Nesne Yönelimli Programlama (OOP)** mimarisi üzerine çalışıldı.
     * **Metaprogramming:** Fonksiyon ve sınıfların davranışlarını değiştirmek için `decorator` ve `decorator combining` yapıları kullanıldı.
     * **Encapsulation & Data Management:** `property` decorator'lar (`getter`, `setter`, `deleter`) ile veri yönetimi sağlandı.
     * **Method Types:** Sınıf yapısını optimize etmek için `staticmethod`, `classmethod` ve `abstractmethod` (Soyutlama) farkları incelendi.
     * **Polymorphism & Inheritance:** `Method Overloading` ve `Overriding` prensipleri ile kalıtım yönetimi; `final` ve `typing` (Tip Belirleme) ile kod güvenliği sağlandı.
+
+### 04_Chapter (Pytorch)
+* [01_pytorch_intro.ipynb](./04_Chapter_pytorch/01_pytorch_intro.ipynb): PyTorch ekosistemine giriş yapıldı. Derin öğrenmenin temel yapı taşı olan Tensör (Tensor) yapısı ve vektörize işlemler incelendi:
+    * **Tensör Öznitelikleri:** Tensörlerin bellekteki yerini belirleyen `device` (CPU/GPU), veri hassasiyetini belirleyen `dtype` ve gradyan takibi için kritik olan `requires_grad` parametreleri analiz edildi.
+    * **Matematiksel Boyut Analizi:** Tensörlerin geometrik yapısını anlamak için shape (boyut bileşenleri) ve `dim()` kavramları üzerinde duruldu.
+    * **Veri Tipleri:** Hesaplama hızını ve doğruluğunu etkileyen farklı tensör veri tiplerine(float32, int64 vb.) bakıldı.
+* [02_pytorch_operations.ipynb](./04_Chapter_pytorch/02_pytorch_operations.ipynb): Tensör oluşturma yöntemleri ele alındı:
+    * **Başlatma Metotları:** `zeros`, `ones` ve belirli bir aralığı kapsayan `arange` fonksiyonları kullanıldı. `ones_like` ile mevcut tensörlerin geometrik yapısını (shape) koruyarak yeni yapılar oluşturuldu. `random tensor` oluşturma teknikleri uygulandı.
+* [03_pytorch_matrix_multiplication.ipynb](./04_Chapter_pytorch/03_pytorch_matrix_multiplication.ipynb): `torch.matmul()` ve `@` operatörü ile vektörize çarpı (dot product) işlemleri gerçekleştirildi.
+* [04_pytorch_aggregation_manipulation.ipynb](./04_Chapter_pytorch/04_pytorch_aggregation_manipulation.ipynb): `max`,`min`,`argmax`,`argmin`,`median`,`mean`,`sum` gibi fonksiyonlara bakıldı. `reshaping` ve `view` ile tensör boyutları yeniden yapılandırıldı. `contiguous` ve `non-contiguous` terimleri açıklandı. `stacking` işlemleri ile tensör birleştirme senaryoları uygulandı. `squeeze` ve `unsqueeze`ile birim boyutların yönetimi (boyut ekleme/çıkarma) gerçekleştirildi. `permute` ile şekil indexi değiştirildi. `slicing` ve `indexing` işlemlerine bakıldı. `random_seed` işlevine bakıldı.
+* [05_pytorch_device_settings.ipynb](./04_Chapter_pytorch/05_pytorch_device_settings.ipynb): CPU ile oluşturdugumuz tensorları nasıl GPU'ya dönüştürürüz ya da GPU ile oluşturulanı nasıl CPU'ya dönüştürürüz bu örnekler uygulandı. Tensorları manuel olarak nasıl GPU versiyona taşırız, context manager ve with keyboardu kullanarak nasıl taşırız ve default olarak GPU versiyonda oluşturmaya nasıl geçiş yaparız işlemlerine bakıldı.
