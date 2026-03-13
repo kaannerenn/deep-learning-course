@@ -58,3 +58,4 @@
 
 ### 07_Chapter (Pytorch Non-Linear Data)
 * [01_pytorch_linear_vs_non-linear.ipynb](./07_Chapter_pytorch_non-linear_data/01_pytorch_linear_vs_non-linear.ipynb): `sklearn` kütüphanesinin `train_test_split()` fonksiyonu kullanılarak train-test datası ayrıldı. Non-linear bir data için `binary classificaton` yapıldı. `loss_fn` olarak `BCEWithLogitsLoss()` kullanıldı ve `BCELoss` ile farkı konuşuldu. `logit` kavramının üstünden geçildi.
+* [02_pytorch_non-linear_homework.ipynb](./07_Chapter_pytorch_non-linear_data/02_pytorch_non-linear_homework.ipynb): non-linear `binary classificaton` problemi üzerinde çalışıldı. Önce linear olarak eğitilen modelin sonuçlarına bakıldı daha sonrasında `nn.ReLU()` fonksiyonu yardımıyla non-linear eğitim yapıldı ve sonuçları karşılaştırıldı.
