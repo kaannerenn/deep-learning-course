@@ -4,6 +4,7 @@
 * [02_Chapter (Veri Bilimi Kütüphaneleri)](#02_chapter-veri-bilimi-kütüphaneleri)
 * [03_Chapter (Advance Python)](#03_chapter-advance-python)
 * [04_Chapter (Pytorch)](#04_chapter-pytorch)
+* [05_Chapter (Pytorch Training Steps)](#04_chapter-pytorch-training-steps)
 * [requirements.txt](./requirements.txt)
 
 ## Bölüm İçerikleri
@@ -45,3 +46,6 @@
 * [03_pytorch_matrix_multiplication.ipynb](./04_Chapter_pytorch/03_pytorch_matrix_multiplication.ipynb): `torch.matmul()` ve `@` operatörü ile vektörize çarpı (dot product) işlemleri gerçekleştirildi.
 * [04_pytorch_aggregation_manipulation.ipynb](./04_Chapter_pytorch/04_pytorch_aggregation_manipulation.ipynb): `max`,`min`,`argmax`,`argmin`,`median`,`mean`,`sum` gibi fonksiyonlara bakıldı. `reshaping` ve `view` ile tensör boyutları yeniden yapılandırıldı. `contiguous` ve `non-contiguous` terimleri açıklandı. `stacking` işlemleri ile tensör birleştirme senaryoları uygulandı. `squeeze` ve `unsqueeze`ile birim boyutların yönetimi (boyut ekleme/çıkarma) gerçekleştirildi. `permute` ile şekil indexi değiştirildi. `slicing` ve `indexing` işlemlerine bakıldı. `random_seed` işlevine bakıldı.
 * [05_pytorch_device_settings.ipynb](./04_Chapter_pytorch/05_pytorch_device_settings.ipynb): CPU ile oluşturdugumuz tensorları nasıl GPU'ya dönüştürürüz ya da GPU ile oluşturulanı nasıl CPU'ya dönüştürürüz bu örnekler uygulandı. Tensorları manuel olarak nasıl GPU versiyona taşırız, context manager ve with keyboardu kullanarak nasıl taşırız ve default olarak GPU versiyonda oluşturmaya nasıl geçiş yaparız işlemlerine bakıldı.
+
+### 04_Chapter (Pytorch Training Steps)
+* [01_pytorch_training_steps.ipynb](./05_Chapter_pytorch_training_steps/01_pytorch_training_steps.ipynb): Pytorch kullanarak nasıl model kurabilirize giriş yapıldı. Çok manuel şekilde teoriyi oturtmak adına model kuruldu. Manuel şekilde nasıl train,test datası ayrılır öğrenildi. `torch_compile()` fonksiyonu ne iş yapar öğrenildi.`state_dict()` fonksiyonu ne işe yarar öğrenildi. Modeli eğitmeden tahmin yaparsak ne olur sonuçlarına bakıldı. `with` keyword'u ve `torch.inference_mode()` kullanılarak tahmin yapıldı. `loss_function` ve `optimizer` seçimi yapıldı. Eğitim yapıldı, `train_loss` ve `test_loss` grafikte gösterildi, daha sonrasında eğitimden geçmiş model ile tahminleme yapılıp grafikte sonuçlarına bakıldı.
