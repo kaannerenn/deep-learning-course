@@ -6,6 +6,7 @@
 * [04_Chapter (Pytorch)](#04_chapter-pytorch)
 * [05_Chapter (Deep Learning Theory)](#05_chapter-deep-learning-theory)
 * [06_Chapter (Pytorch Intro Linear Data)](#06_chapter-pytorch-intro-linear-data)
+* [07_Chapter (Pytorch Non-Linear Data)](#07_chapter-pytorch-non-linear-data)
 * [requirements.txt](./requirements.txt)
 
 ## Bölüm İçerikleri
@@ -54,3 +55,6 @@
 ### 06_Chapter (Pytorch Intro Linear Data)
 * [01_pytorch_training_steps.ipynb](./06_Chapter_pytorch_intro_linear_data/01_pytorch_training_steps.ipynb): Pytorch kullanarak nasıl model kurabilirize giriş yapıldı. Çok manuel şekilde teoriyi oturtmak adına model kuruldu. Manuel şekilde nasıl train,test datası ayrılır öğrenildi. `torch_compile()` fonksiyonu ne iş yapar öğrenildi.`state_dict()` fonksiyonu ne işe yarar öğrenildi. Modeli eğitmeden tahmin yaparsak ne olur sonuçlarına bakıldı. `with` keyword'u ve `torch.inference_mode()` kullanılarak tahmin yapıldı. `loss_function` ve `optimizer` seçimi yapıldı. Eğitim yapıldı, `train_loss` ve `test_loss` grafikte gösterildi, daha sonrasında eğitimden geçmiş model ile tahminleme yapılıp grafikte sonuçlarına bakıldı.
 * [02_pytorch_training_structural.ipynb](./06_Chapter_pytorch_intro_linear_data/02_pytorch_training_structrual.ipynb): [01_pytorch_training_steps.ipynb](./06_Chapter_pytorch_intro_linear_data/01_pytorch_training_steps.ipynb) notebook'unda yaptığımız manuel yapıyı torch kütüphanesinden faydalanarak kurduk. `nn.Linear()`, `linear_layer()` kullanımlarına bakıldı. Daha sonrasında modeller eğitilirken çıkan `dtype` ve `shape` hataları düzeltilip, model eğitildi ve test edildi.
+
+### 07_Chapter (Pytorch Non-Linear Data)
+* [01_pytorch_linear_vs_non-linear.ipynb](./07_Chapter_pytorch_non-linear_data/01_pytorch_linear_vs_non-linear.ipynb): `sklearn` kütüphanesinin `train_test_split()` fonksiyonu kullanılarak train-test datası ayrıldı. Non-linear bir data için `binary classificaton` yapıldı. `loss_fn` olarak `BCEWithLogitsLoss()` kullanıldı ve `BCELoss` ile farkı konuşuldu. `logit` kavramının üstünden geçildi.
