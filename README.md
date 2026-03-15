@@ -59,3 +59,9 @@
 ### 07_Chapter (Pytorch Non-Linear Data)
 * [01_pytorch_linear_vs_non-linear.ipynb](./07_Chapter_pytorch_non-linear_data/01_pytorch_linear_vs_non-linear.ipynb): `sklearn` kütüphanesinin `train_test_split()` fonksiyonu kullanılarak train-test datası ayrıldı. Non-linear bir data için `binary classificaton` yapıldı. `loss_fn` olarak `BCEWithLogitsLoss()` kullanıldı ve `BCELoss` ile farkı konuşuldu. `logit` kavramının üstünden geçildi.
 * [02_pytorch_non-linear_homework.ipynb](./07_Chapter_pytorch_non-linear_data/02_pytorch_non-linear_homework.ipynb): non-linear `binary classificaton` problemi üzerinde çalışıldı. Önce linear olarak eğitilen modelin sonuçlarına bakıldı daha sonrasında `nn.ReLU()` fonksiyonu yardımıyla non-linear eğitim yapıldı ve sonuçları karşılaştırıldı.
+* [03_pytorch_multi_class_classification.ipynb](./07_Chapter_pytorch_non-linear_data/03_pytorch_multi_class_classification.ipynb): Multi class classification mimarisi ve modelin dış dünyaya açılması (Deployment) süreçleri çalışıldı.
+    * **Model Mimarisi:** `Softmax` aktivasyon fonksiyonu ile olasılık dağılımı hesaplandı. `CrossEntropyLoss` kullanımı sırasında veri tipi (`dtype`) uyumluluğu için `torch.long` dönüşümünün önemi incelendi.
+    * **Veri İşleme:** **Label Encoding** ve bu işlemin `inverse` (ters dönüşüm) süreci uygulanarak model çıktılarının okunabilirliği sağlandı.
+    * **Değerlendirme (Metrics):** `torchmetrics` kütüphanesi entegre edilerek **Accuracy** ve **Confusion Matrix** (Karışıklık Matrisi) üzerinden model başarısı analiz edildi.
+    * **Deployment & Web App:** Eğitilen model `state_dict()` ile kaydedilip yüklendi. **Cursor AI** yardımıyla modelin Python tabanlı bir backend üzerinden web uygulamasına entegrasyonu sağlandı.
+    * **Professional Note (ONNX):** Profesyonel prodüksiyon ortamlarında farklı diller (C++, C#, Go vb.) ve framework'ler arasında model taşınabilirliği sağlayan **ONNX** formatının sektörel önemi ve kullanım senaryoları not edildi.
