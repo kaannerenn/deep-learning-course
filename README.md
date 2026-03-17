@@ -7,6 +7,7 @@
 * [05_Chapter (Deep Learning Theory)](#05_chapter-deep-learning-theory)
 * [06_Chapter (Pytorch Intro Linear Data)](#06_chapter-pytorch-intro-linear-data)
 * [07_Chapter (Pytorch Non-Linear Data)](#07_chapter-pytorch-non-linear-data)
+* [08_Chapter (Computer Vision & Convolutional Neural Networks)](#08_chapter-computer-vision--convolutional-neural-networks)
 * [requirements.txt](./requirements.txt)
 
 ## Bölüm İçerikleri
@@ -65,4 +66,12 @@
     * **Değerlendirme (Metrics):** `torchmetrics` kütüphanesi entegre edilerek **Accuracy** ve **Confusion Matrix** (Karışıklık Matrisi) üzerinden model başarısı analiz edildi.
     * **Deployment & Web App:** Eğitilen model `state_dict()` ile kaydedilip yüklendi. **Cursor AI** yardımıyla modelin Python tabanlı bir backend üzerinden web uygulamasına entegrasyonu sağlandı.
     * **Professional Note (ONNX):** Profesyonel prodüksiyon ortamlarında farklı diller (C++, C#, Go vb.) ve framework'ler arasında model taşınabilirliği sağlayan **ONNX** formatının sektörel önemi ve kullanım senaryoları not edildi.
-* [04_pytorch_multi_classification.ipynb](./07_Chapter_pytorch_non-linear_data/04_pytorch_multi_classification.ipynb): 03 Dosyasına benzer süreçlerle farklı veri setleri üzerinde çalışıldı. Öncelikle biraz daha fazla feature içeren bir dataset üzerinde çalışıldı fakat istenen sonuçlar elde edilemedi. Sonrasında daha basit bir dataset ile çalışıldı. Bu ayrı bir repoda Django tarzında bir framework kullanılarak bir websitesi haline getirilecek.
+* [04_pytorch_multi_classification.ipynb](./07_Chapter_pytorch_non-linear_data/04_pytorch_multi_classification.ipynb): [03_pytorch_multi_class_classification.ipynb](./07_Chapter_pytorch_non-linear_data/03_pytorch_multi_class_classification.ipynb) Dosyasına benzer süreçlerle farklı veri setleri üzerinde çalışıldı. Öncelikle biraz daha fazla feature içeren bir dataset üzerinde çalışıldı fakat istenen sonuçlar elde edilemedi. Sonrasında daha basit bir dataset ile çalışıldı. Bu ayrı bir repoda Django tarzında bir framework kullanılarak bir websitesi haline getirilecek.
+
+### 08_Chapter (Computer Vision & Convolutional Neural Networks)
+* [01_intro_comp_vision.ipynb](./08_Chapter_computer_vision/01_intro_comp_vision.ipynb): Bilgisayarlı Görü (Computer Vision) dünyasına giriş ve **CNN** temelleri.
+    * **Veri Hazırlama:** `CIFAR10` veri seti üzerinde `Transforms` (ToTensor, Normalize) teknikleri kullanılarak veri ön işleme yapıldı.
+    * **Model Karşılaştırmaları:** Standart Yapay Sinir Ağları (ANN - Linear & Non-linear) ile Evrişimli Sinir Ağları (CNN) mimarileri kuruldu; eğitim performansları ve doğruluk (accuracy) skorları karşılaştırıldı.
+* [02_CNN_deep_dive.ipynb](./08_Chapter_computer_vision/02_CNN_deep_dive.ipynb): CNN mimarisinin matematiksel katman yapısına derinlemesine bakış.
+    * **Katman Dinamikleri:** Convolutional katmanlar ve `MaxPool` operasyonları simüle edildi.
+    * **Hiperparametre Analizi:** `kernel_size`, `in_channels`, `out_channels`, `stride` ve `padding` parametrelerinin çıktı boyutu (output shape) ve öznitelik haritaları (feature maps) üzerindeki etkileri incelendi.
